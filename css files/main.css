@@ -1,0 +1,188 @@
+/* hello, i'm */
+h2{
+  font-size: 2.457rem;
+  font-weight: 700;
+  color: var(--clr-navbar);
+
+
+}
+
+#front_page{
+  background-color: var(--white);
+  min-height: 800px;
+}
+
+
+/* the text on the front page */
+.main-text{
+  letter-spacing: 0.89px;
+  color: #495464;
+  display: inline-block;
+}
+
+.name{
+   font-size: 4rem;
+  color: var(--clr-navbar);
+  letter-spacing: -13px;
+  padding-left: 0;
+  transition: 300ms;
+  display: inline-block;
+}
+
+.name:hover{
+  color: var(--clr-blue);
+   cursor: pointer;
+   box-shadow: 2px 0px 151px 16px rgba(42,178,175,0.36);
+  -webkit-box-shadow: 2px 0px 151px 16px rgba(42,178,175,0.96);
+  -moz-box-shadow: 2px 0px 151px 16px rgba(42,178,175,0.36);
+}
+
+
+/*SCROLL FOR MORE*/
+.SFM{
+  position: relative;
+  top: 5.6rem;
+  letter-spacing: 4px;
+}
+
+
+hr{
+  width: 215px;
+  height: 4px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  background-color: var(--clr-blue);
+}
+
+
+/*the dot next to my name,i stole this idea from
+someone called Ojieame Onimiya, Thanks bro!!*/
+.dot{
+  font-size: 90px;
+  color: var(--clr-blue);
+  cursor: pointer;
+}
+
+.moving-dot::before{
+  /* content: 'hctib ,nac uoy  fi em hctac'; */
+  content: 'catch me if  you can, bitch';
+  font-size: 1rem;
+  /* height: 30px;
+  width: 70px; */
+  color: var(--clr-navbar);
+  position: relative;
+  top: -40px;
+  left: 70px;
+  letter-spacing: normal;
+}
+
+.moving-dot{
+  animation: dot 2s infinite;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+@keyframes dot {
+  0%  { font-size: 130px;              }
+  25% { transform: translateY(-350px); }
+  50% { transform: translateX(-350px); }
+  75% { transform: translateY(350px);  }
+  100%{ transform: translateX(350px);  }
+  }
+
+
+/*the second page in the website*/
+#about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-blue);
+  min-height: 800px;
+}
+
+/* the colored cards in the div about section   */
+.colord-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.container{
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  margin: 80px;
+}
+
+.container1{
+  background-color: #FEB139;
+}
+
+.container2{
+  background-color: #9ED5C5;
+}
+
+.container3{
+  background-color: hsl(158, 36%, 37%);
+  position: relative;
+  right: 47%;
+}
+
+
+/* containers titles on the about section */
+#about h2{
+  color: var(--clr-navbar);
+  padding:  30px 30px 20px 45px;
+  font-size: 2.457rem;
+  font-weight: var(--bold-fw);
+}
+
+#about p{
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-size: var(--main-fs);
+  font-weight: var(--main-fw);
+  padding: 10px 30px 20px 45px;
+  color: var(--transparat-white);
+}
+
+/*the third page of the website*/
+#personal{
+  padding: 18rem 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/cool.jpg");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* the paragraphs that has a lot of 
+text about my and my opinions */
+.blog-containers p{
+  font-size: 1.225rem;
+  line-height: 1.9em;
+  text-align: left;
+  letter-spacing: 1.3px;
+  color: var(--transparat-white);
+  font-weight: var(--main-fw);
+}
+
+
+.blog-containers h2{
+  line-height: 1.78;
+  color: var(--clr-blue);
+}
+
+#footer{
+  background-color: var(--clr-blue);
+  color: var(--white);
+  height: auto;
+  padding: 50px;
+  text-align: center;
+}
