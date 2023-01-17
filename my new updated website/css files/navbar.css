@@ -1,0 +1,378 @@
+            /* these are some of the collections of colors that can be 
+            assiciated with each other and look good on the name on the navbar */
+   /* two colors white and black */
+  /* --clr-nam-1: hsl(0, 0%, 100%);
+  --clr-nam-2: #222222;
+  --clr-nam-3: hsl(0, 0%, 100%);
+  --clr-nam-4: #222222;
+  --clr-nam-5: hsl(0, 0%, 100%);
+  --clr-nam-6: #222222;
+  --clr-nam-7: hsl(0, 0%, 100%);
+  --clr-nam-8: #222222; */
+
+  /* three colors */
+  /* --clr-nam-1: hsl(179, 62%, 43%);
+  --clr-nam-2: hsl(42, 100%, 50%);
+  --clr-nam-3: #f80202;
+  --clr-nam-4: hsl(179, 62%, 43%);
+  --clr-nam-5: hsl(42, 100%, 50%);
+  --clr-nam-6: #f80202;
+  --clr-nam-7: hsl(179, 62%, 43%);
+  --clr-nam-8: hsl(42, 100%, 50%); */
+
+  /* multiple colors ( 8 colors) */
+  /* --clr-nam-1: hsl(179, 62%, 43%);
+  --clr-nam-2: hsl(42, 83%, 47%);
+  --clr-nam-3: hsl(264, 91%, 53%);
+  --clr-nam-4: hsl(339, 86%, 48%);
+  --clr-nam-5: hsl(135, 87%, 47%);
+  --clr-nam-6: hsl(72, 87%, 50%);
+  --clr-nam-7: hsl(0, 92%, 48%);
+  --clr-nam-8: #222222; */
+
+
+/* the actual code that generates the navbar */
+nav{
+  background: var(--clr-navbar);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+/* my name on the navbar */
+label.brand{
+  color: var(--white);
+  font-size: 27px;
+  line-height: 80px;
+  padding: 0 40px;
+  font-weight: 700;
+}
+
+
+.brand span{
+  letter-spacing: -6px;
+  transition: 300ms;
+}
+
+.clicked{
+  font-size: 400%;
+}
+
+ /* in order to be able to translate it */
+.letter{
+  display: inline-block;
+}
+
+/* the  hover effect you see when hovering on the brand name, mohammad */
+.letter:hover{
+  color: var(--clr-blue);
+   cursor: pointer;
+   transform: translateY(-20px);
+   background-color: rgba(42,178,175,0.68);
+   box-shadow: 2px -6px 9px 22px rgba(42,178,175,0.68);
+   -webkit-box-shadow: 2px -6px 9px 22px rgba(42,178,175,0.68);
+   -moz-box-shadow: 2px -6px 9px 22px rgba(42,178,175,0.68);
+}
+
+/* the next three selectors are for the navbar */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: var(--white);
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: .5;
+}
+
+/* for the blue line that appears above nav 
+element after hovering on them */
+.li::after{
+  content: '';
+  background-color: var(--clr-blue);
+  position: absolute;
+  height: 4px;
+  border-radius: 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out 100ms;
+}
+
+.li-1,
+.li-2,
+.li-3,
+.li-4{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* to make the li element a little bit 
+transparent when hovering on it */
+a:hover{
+  transition: .5s;
+  opacity: 1;
+}
+
+/* the hover effect on the desktop */
+.li:hover::after,
+.li:focus:after{
+  transform: scaleX(1);
+  display: block;
+}
+
+/* the hamburger menu and making it clickble */
+.checkbtn{
+  font-size: 35px;
+  color: var(--white);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+
+#check{
+  display: none;
+}
+
+
+#m{
+  animation: m 4s infinite;
+}
+
+#o{
+  animation: o 4s infinite;
+}
+
+#h{
+  animation: h 4s infinite;
+}
+
+#a{
+  animation: a 4s infinite;
+}
+
+#m-2{
+  animation: m-2 4s infinite;
+}
+
+#m-3{
+  animation: m-3 4s infinite;
+}
+
+#a-2{
+  animation: a-2 4s infinite;
+}
+
+#d{
+  animation: d 4s infinite;
+}
+
+
+@keyframes d {
+  0%      { color: var(--clr-nam-1); }
+  14.285% { color: var(--clr-nam-2); }
+  28.571% { color: var(--clr-nam-3); }
+  42.857% { color: var(--clr-nam-4); }
+  57.142% { color: var(--clr-nam-5); }
+  71.428% { color: var(--clr-nam-6); }
+  85.714% { color: var(--clr-nam-7); }
+  100%    { color: var(--clr-nam-8); }
+}
+
+@keyframes a-2 {
+  0%      { color: var(--clr-nam-2); }
+  14.285% { color: var(--clr-nam-3); }
+  28.571% { color: var(--clr-nam-4); }
+  42.857% { color: var(--clr-nam-5); }
+  57.142% { color: var(--clr-nam-6); }
+  71.428% { color: var(--clr-nam-7); }
+  85.714% { color: var(--clr-nam-8); }
+  100%    { color: var(--clr-nam-1); }
+}
+
+@keyframes m-3 {
+  0%      { color: var(--clr-nam-3); }
+  14.285% { color: var(--clr-nam-4); }
+  28.571% { color: var(--clr-nam-5); }
+  42.857% { color: var(--clr-nam-6); }
+  57.142% { color: var(--clr-nam-7); }
+  71.428% { color: var(--clr-nam-8); }
+  85.714% { color: var(--clr-nam-1); }
+  100%    { color: var(--clr-nam-2); }
+}
+
+@keyframes m-2 {
+  0%      { color: var(--clr-nam-4); }
+  14.285% { color: var(--clr-nam-5); }
+  28.571% { color: var(--clr-nam-6); }
+  42.857% { color: var(--clr-nam-7); }
+  57.142% { color: var(--clr-nam-8); }
+  71.428% { color: var(--clr-nam-1); }
+  85.714% { color: var(--clr-nam-2); }
+  100%    { color: var(--clr-nam-3); }
+}
+
+@keyframes a {
+  0%      { color: var(--clr-nam-5); }
+  14.285% { color: var(--clr-nam-6); }
+  28.571% { color: var(--clr-nam-7); }
+  42.857% { color: var(--clr-nam-8); }
+  57.142% { color: var(--clr-nam-1); }
+  71.428% { color: var(--clr-nam-2); }
+  85.714% { color: var(--clr-nam-3); }
+  100%    { color: var(--clr-nam-4); }
+}
+
+@keyframes h {
+  0%      { color: var(--clr-nam-6); }
+  14.285% { color: var(--clr-nam-7); }
+  28.571% { color: var(--clr-nam-8); }
+  42.857% { color: var(--clr-nam-1); }
+  57.142% { color: var(--clr-nam-2); }
+  71.428% { color: var(--clr-nam-3); }
+  85.714% { color: var(--clr-nam-4); }
+  100%    { color: var(--clr-nam-5); }
+}
+
+@keyframes o {
+  0%      { color: var(--clr-nam-7); }
+  14.285% { color: var(--clr-nam-8); }
+  28.571% { color: var(--clr-nam-1); }
+  42.857% { color: var(--clr-nam-2); }
+  57.142% { color: var(--clr-nam-3); }
+  71.428% { color: var(--clr-nam-4); }
+  85.714% { color: var(--clr-nam-5); }
+  100%    { color: var(--clr-nam-6); }
+}
+
+@keyframes m {
+  0%      { color: var(--clr-nam-8); }
+  14.285% { color: var(--clr-nam-1); }
+  28.571% { color: var(--clr-nam-2); }
+  42.857% { color: var(--clr-nam-3); }
+  57.142% { color: var(--clr-nam-4); }
+  71.428% { color: var(--clr-nam-5); }
+  85.714% { color: var(--clr-nam-6); }
+  100%    { color: var(--clr-nam-7); }
+}
+
+
+@media (max-width: 952px){
+   label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+   }
+
+   nav ul li a{
+    font-size: 16px;
+   }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1a202a;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav{
+    position: fixed;
+    z-index: 2;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 120px 0; 
+    line-height: 0px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+  }
+
+
+  a:hover{
+    background: none;
+  }
+
+  /* i really don't know what the fuck is this selector */
+  #check:checked ~ ul{
+    left: 0
+  }
+
+
+/* just some psuedo elements to make hover effects on
+the hamburger menu on mobile */
+.li::after{
+  content: '';
+  background-color: var(--clr-blue);
+  position: absolute;
+  height: 4px;
+  border-radius: 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out 100ms;
+}
+
+.li::before{
+ content: '';
+ background-color: var(--clr-blue);
+ position: absolute;
+ height: 4px;
+ border-radius: 30px;
+ width: 100%;
+ left: 0;
+ right: 0;
+ top: -7px;
+ transform: scaleX(0);
+ transition: transform 300ms ease-in-out 100ms;
+}
+
+/* to make the li element a little bit 
+transparent when hovering on it */
+a:hover{
+  transition: .5s;
+  opacity: 1;
+}
+
+/* i really don't know why to use the focus psudo class 
+in these cases, but i think it might be useful */
+.li:hover::after,
+.li:focus::after{
+  transform: scaleX(1);
+  display: block;
+}
+
+.li:hover::before,
+.li:focus::before{
+  transform: scaleX(1);
+  display: block;
+}
+}
