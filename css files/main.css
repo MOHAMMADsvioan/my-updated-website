@@ -156,7 +156,7 @@ someone called Ojieame Onimiya, Thanks bro!!*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./images/cool.jpg");
+  background-image: url("../images/cool.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
