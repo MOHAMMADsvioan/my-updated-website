@@ -64,18 +64,6 @@ someone called Ojieame Onimiya, Thanks bro!!*/
   cursor: pointer;
 }
 
-.moving-dot::before{
-  /* content: 'hctib ,nac uoy  fi em hctac'; */
-  content: 'catch me if  you can, bitch';
-  font-size: 1rem;
-  /* height: 30px;
-  width: 70px; */
-  color: var(--clr-navbar);
-  position: relative;
-  top: -40px;
-  left: 70px;
-  letter-spacing: normal;
-}
 
 .moving-dot{
   animation: dot 2s infinite;
@@ -84,14 +72,6 @@ someone called Ojieame Onimiya, Thanks bro!!*/
   top: 100px;
   right: 100px;
 }
-
-@keyframes dot {
-  0%  { font-size: 130px;              }
-  25% { transform: translateY(-350px); }
-  50% { transform: translateX(-350px); }
-  75% { transform: translateY(350px);  }
-  100%{ transform: translateX(350px);  }
-  }
 
 
 /*the second page in the website*/
@@ -156,11 +136,15 @@ someone called Ojieame Onimiya, Thanks bro!!*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/cool.jpg");
+  background-image: url("../images/pic.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.upwork{
+  color: var(--upwork);
+  font-weight: 700;
+}
 
 /* the paragraphs that has a lot of 
 text about my and my opinions */
