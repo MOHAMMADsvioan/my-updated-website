@@ -23,6 +23,9 @@
 
   --bold-fw: 700;
   --main-fw: 400;
+  
+    --upwork: hsl(113, 100%, 33%);
+
 }
 
 /* i don't know why these exist, but 
