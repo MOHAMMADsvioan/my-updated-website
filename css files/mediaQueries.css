@@ -4,7 +4,7 @@
     .main-text{
       position: absolute;
       left: 9rem;
-      top: 10rem;
+      top: 12rem;
 
     }
     .text{
@@ -14,7 +14,7 @@
 
     .face{  
       position: absolute;
-      top: 7rem;
+      top: 9rem;
       right: 3rem;
       height: 460px;
       display: block;
@@ -35,7 +35,7 @@
 }
 
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 450px){
 
   #front_page{
     min-height: 1200px;
@@ -101,7 +101,7 @@
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
-    background-image: url("../images/phone pic.jpg");
+    background-image: url("../images/cool.jpg");
     
   }
 
